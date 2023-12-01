@@ -1,38 +1,102 @@
-.App {
+body {
+  background-color: #717744;
+}
+
+#editor-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#editor-header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  justify-content: flex-start;
+  border: 2px solid black;
+  width: 500px;
+  height: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  background-color: #383d20;
+  color: #eff1ed;
+  box-shadow: 5px 5px 5px black;
 }
 
-.App-link {
-  color: #61dafb;
+#editor {
+  width: 500px;
+  height: 250px;
+  overflow: scroll;
+  background-color: #bcbd8b;
+  box-shadow: 5px 5px 5px black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#editor-title {
+  margin: 0;
+  padding-top: 8px;
+  flex-basis: 1;
+  font-size: 1.3em;
+}
+
+#editor-icon,
+#editor-expand-arrows,
+#preview-icon,
+#preview-expand-arrows {
+  font-size: 1.2em;
+  flex-basis: 1;
+  padding: 10px;
+}
+
+#preview-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 380px;
+}
+
+#preview-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border: 2px solid black;
+  width: 700px;
+  height: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #383d20;
+  color: #eff1ed;
+  box-shadow: 5px 5px 5px black;
+}
+
+#preview-title {
+  margin: 0;
+  padding-top: 8px;
+  flex-basis: 1;
+  font-size: 1.3em;
+}
+
+#preview {
+  border: 2px solid black;
+  width: 700px;
+  height: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  text-align: left;
+  overflow: scroll;
+  background-color: #bcbd8b;
+  box-shadow: 5px 5px 5px black;
+}
+
+img {
+  width: 70%;
+}
+
+code,
+pre {
+  background-color: lightgray;
 }
